@@ -26,16 +26,7 @@ final Map<String, RouterMethod> _definitions = {
       },
     );
   },
-  // '/picture_view': (settings, _) {
-  //   return MaterialPageRoute(
-  //     settings: settings,
-  //     builder: (context) {
-  //       ImageList? imageList = settings.arguments as ImageList?;
 
-  //       return PictureView(file: ,list: imageList );
-  //     },
-  //   );
-  // },
 };
 
 Map<String, String>? _buildParams(String key, String name) {

@@ -79,19 +79,26 @@ packages:
     source: hosted
     version: "1.1.2"
   ffmpeg_kit_flutter:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: ffmpeg_kit_flutter
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.5.0"
+    version: "4.5.1"
+  ffmpeg_kit_flutter_min_gpl:
+    dependency: "direct main"
+    description:
+      name: ffmpeg_kit_flutter_min_gpl
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.5.1-LTS"
   ffmpeg_kit_flutter_platform_interface:
     dependency: transitive
     description:
       name: ffmpeg_kit_flutter_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.0"
+    version: "0.2.1"
   file:
     dependency: transitive
     description:
@@ -104,13 +111,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_ffmpeg:
-    dependency: "direct main"
-    description:
-      name: flutter_ffmpeg
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.4.2"
   flutter_lints:
     dependency: "direct dev"
     description:

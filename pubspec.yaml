@@ -30,14 +30,14 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  video_editor:
+  video_editor: ^1.2.2
   image_picker:
   helpers: ^1.1.4
   gallery_saver: ^2.3.2
   provider:
   path_provider:
-  flutter_ffmpeg:
-  ffmpeg_kit_flutter:
+  # flutter_ffmpeg:
+  ffmpeg_kit_flutter_min_gpl: 4.5.1-LTS
 
 
 dev_dependencies:

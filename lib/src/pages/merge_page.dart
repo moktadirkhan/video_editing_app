@@ -1,13 +1,12 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:flutter_ffmpeg/flutter_ffmpeg.dart';
+// import 'package:flutter_ffmpeg/flutter_ffmpeg.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:video_editing_app/src/components/card/grid_list_card.dart';
 import 'package:video_editing_app/src/components/item_list.dart';
 import 'package:video_editing_app/src/provider/video_list.dart';
 import 'package:video_editor/video_editor.dart';
-import 'package:ffmpeg_kit_flutter/execute_callback.dart';
 import '../../router.dart';
 
 class MergePage extends StatefulWidget {
@@ -24,7 +23,7 @@ class _MergePageState extends State<MergePage> {
   String? videos;
   List<Item>? videolist;
   List<Item>? selectedvideoList;
-  final FlutterFFmpeg _fFmpeg = FlutterFFmpeg();
+  // final FlutterFFmpeg _fFmpeg = FlutterFFmpeg();
   final ImagePicker _picker = ImagePicker();
   int i = 0;
   @override
@@ -148,7 +147,7 @@ class _MergePageState extends State<MergePage> {
     print("local files $contents");
     String command =
         "ffmpeg -i $filePath -filter_complex '[0:0][1:0]concat=n=2:v=0:a=1[out]' -map '[out]' -c copy $path/output.mp4";
-    _fFmpeg.execute(command).then((value) => print("Ffmpeg1 process $value"));
+    // _fFmpeg.execute(command).then((value) => print("Ffmpeg1 process $value"));
 
 
 
